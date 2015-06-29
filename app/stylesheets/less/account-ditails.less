@@ -1,0 +1,172 @@
+
+.account-ditails {
+  background: url(../images/bg-account.jpg) 0 0 no-repeat;
+  background-size: cover;
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .6);
+  padding-bottom: 45px;
+  padding-top: 20px;
+
+  &-row {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 870px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-offers {
+    margin-right: 85px;
+
+    @media (max-width: 870px) {
+      margin-right: 0;
+    }
+  }
+
+  &-list {
+    margin-right: 6px;
+    margin-top: 30px;
+    list-style: none;
+
+    @media (max-width: 870px) {
+      margin-right: 0;
+    }
+  }
+  &-item {
+    background: #04a5dd;
+    color: #fff;
+    font-size: 30px;
+    line-height: 65px;
+    margin-bottom: 22px;
+    position: relative;
+    text-align: center;
+    width: 325px;
+
+    @media (max-width: 870px) {
+      background: #0d979b;
+    }
+
+    &::before {
+      background: url(../pics/pic4.png) 0 0 no-repeat;
+      content: '';
+      display: block;
+      height: 40px;
+      left: -20px;
+      position: absolute;
+      top: 10px;
+      width: 40px;
+    }
+  }
+}
+
+.form-account {
+  background: url(../images/bg-form.jpg);
+  border: 1px dashed #a6a5a5;
+  border-radius: 6px;
+  box-shadow: 0 0 0 5px #eaeae7;
+  display: inline-flex;
+  padding-top: 13px;
+  width: 308px;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    font-size: 24px;
+    font-weight: normal;
+
+    &:before {
+      display: block;
+      width: 100px;
+      height: 100px;
+      background: #000;
+    }
+  }
+  &-field {
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    height: 33px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    padding-left: 13px;
+    width: 240px;
+
+    &:focus {
+      box-shadow: 0 0 0 1px #04a5dd;
+    }
+
+    &::placeholder {
+      color: #6b6b6b;
+      font-size: 14px;
+    }
+  }
+  &-checkbox-wrapper {
+      margin-bottom: 13px;
+      margin-top: 5px;
+      position: relative;
+  }
+  &-checkbox-field {
+    display: none;
+
+    &:checked + .form-account-toggle {
+
+      &:before {
+        background: #f6bc19 url(../pics/tick.png) 0 0 no-repeat;
+      }
+    }
+  }
+
+  &-toggle {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 2px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      background: #f6bc19;
+    }
+  }
+  
+  &-btn {
+    background: linear-gradient(#2592d4, #1c71a6);
+    border: none;
+    border-radius: 0 0 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 37px;
+    line-height: 67px;
+    margin-top: 13px;
+    width: 305px;
+
+    @media (max-width: 870px) {
+      font-size: 32px;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px #2592d4 inset, 0 7px 7px 0 rgba(0, 0, 0, .6) inset;
+    }
+  }
+}
+
+.item-after::after {
+  background: url(../images/image1.png) 0 0 no-repeat;
+  content: '';
+  display: block;
+  height: 239px;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 86px;
+  @media (max-width: 870px) {
+    display: none;
+  }
+}

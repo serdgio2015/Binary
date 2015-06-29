@@ -1,0 +1,42 @@
+
+.brands {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-row,
+  &-row,
+  &-row {
+    font-size: 22px;
+    line-height: 45px;
+
+    @media (max-width: 870px) {
+      font-size: 14px;
+      line-height: 35px;
+    }
+  }
+
+  &-row:first-child {
+    background: url(../pics/sprite2.png) 104% -10px no-repeat;
+
+    @media (max-width: 870px) {
+      background-position: 104% 0;
+      background-size: auto 40px;
+    }
+  }
+
+  &-row:nth-child(2) {
+    background: url(../pics/sprite3.png) 100% 10px no-repeat;
+
+    @media (max-width: 870px) {
+      background-size: auto 20px;
+    }
+  }
+
+  &-row:nth-child(3) {
+    background: url(../pics/sprite4.png) 100% 10px no-repeat;
+
+    @media (max-width: 870px) {
+      background-size: auto 20px;
+    }
+  }
+}

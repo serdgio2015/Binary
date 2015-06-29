@@ -1,0 +1,92 @@
+
+.open-account {
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.6);
+  min-height: 1px;
+  background: url(../images/bg-header.jpg);
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-title {
+    display: block;
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-left: 65px;
+    margin-bottom: 50px;
+
+    @media (max-width: 870px) {
+      font-size: 24px;
+      text-align: left;
+      padding-left: 110px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background: url(../pics/pic1.png) 0 0 no-repeat; 
+      background-size: 60px 60px; 
+
+      @media (max-width: 870px) {
+        width: 105px;
+        height: 105px;
+        background-size: 105px 105px;
+      }
+    }
+  }
+
+  &-form {
+    border-radius: 3px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.6) inset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+
+    &-title {
+      font-size: @h1;
+      font-weight: bold;
+      color: @color-yellow-2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-btn {
+    display: inline-block;
+    text-decoration: none;
+
+    &-wrapper {
+      box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.6);
+      padding: 15px;
+    }
+
+    &-item {
+      background-image: linear-gradient(#fed72a, #fcb21c);
+      border-radius: 3px;
+      font-size: @h1;
+      font-weight: bold;
+      color: #000;
+      line-height: 80px;
+      padding-left: 105px;
+      padding-right: 105px;
+
+      @media (max-width: 870px) {
+        font-weight: normal;
+        padding-left: 115px;
+        padding-right: 115px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 1px #bb6a01 inset, 0 7px 7px 0 rgba(0, 0, 0, 0.6) inset;
+      }
+    }
+  }
+}
